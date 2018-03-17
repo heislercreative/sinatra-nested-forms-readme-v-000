@@ -8,5 +8,13 @@
       <h4>Grade: <%= @student.grade %></h4>
     </div><br>
     
+    <h1>Courses</h1>
+    <% @course.each do |course|%>
+      <div class="course">
+        <p>Name: <%= course.name %></p>
+        <p>Topic: <%= course.topic %></p>
+      </div>
+    <% end %>
+    
   </body>
 </html>
